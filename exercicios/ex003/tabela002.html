@@ -23,12 +23,19 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+            position: relative;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         td.num{
             text-align: right;
         }
-        
+
         tbody > tr:nth-child(2n){
             background-color: lightgray;
         }
